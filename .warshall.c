@@ -26,6 +26,7 @@ void warshallAlgorithm(int graph[V][V]) {
                 reach[i][j] = reach[i][j] || (reach[i][k] && reach[k][j]);
             }
         }
+    }
 
     printf("Transitive closure matrix is:\n");
     printMatrix(reach);
